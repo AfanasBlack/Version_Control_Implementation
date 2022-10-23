@@ -7,7 +7,7 @@
 #### Основа интрумента:
 * *Массив интов, куда будут добавляться суммы продаж.*
 
-``` 
+```java 
 public class SalesManager {
 protected int[] sales;
 
@@ -16,7 +16,7 @@ protected int[] sales;
     }
 ```
 * *Далее метод поиска наибольшей суммы*
-```
+```java
 public int max() {
         int max = -1;
         for (int sale : sales) {
@@ -33,17 +33,17 @@ public int max() {
 #### Реализация инструмента:
 
 1. В классе Main новый интрумент продаж и поместите в него суммы.
-```
+```java
 SalesManager salesManager = new SalesManager(new int[]{сумма, сумма...});
 ```
 2. Вызовите метод max из SalesManager.
-```
+```java
 salesManager.max();
 ```
 *Метод проанализирует ваши суммы и выдаст вам наибольшую.*
 
 ### Пример реализации интрумента
-```
+```java
 SalesManager salesManager = new SalesManager(new int[]{200, 300, 500});
 
         System.out.println(salesManager.max());
